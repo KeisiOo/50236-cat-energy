@@ -1,0 +1,41 @@
+.form {
+  @include font-size-height (16px, 18px);
+  @include font-oswald (#222222);
+  text-transform: uppercase;
+}
+
+.form__desc {
+  @include font-size-height (14px, 18px);
+  @include font-oswald;
+}
+
+.form__input-text {
+  @include font-size-height (16px, 18px);
+  @include font-oswald (#444444);
+}
+
+.form__title {
+  @include font-size-height (24px, 24px);
+  @include font-oswald;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.form__textarea {
+  @include font-size-height (16px, 18px);
+  @include font-oswald (#444444);
+}
+
+.form__submit {
+  @include font-size-height (16px, 20px);
+  @include font-oswald (#ffffff);
+  text-transform: uppercase;
+  background: #68b738;
+  border: none;
+}
+
+.form__legend {
+  @include font-size-height (14px, 16px);
+  @include font-arial;
+  text-transform: none;
+}

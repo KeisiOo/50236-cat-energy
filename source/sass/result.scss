@@ -1,0 +1,19 @@
+.result__desk {
+  @include font-size-height (14px, 18px);
+}
+
+.result__item {
+  @include font-size-height (24px, 24px);
+  @include font-oswald;
+}
+
+.result__item-explain {
+  @include font-size-height (12px, 12px);
+  @include font-arial;
+}
+
+.result__costs {
+  @include font-size-height (14px, 20px);
+  @include font-oswald;
+  text-transform: uppercase;
+}

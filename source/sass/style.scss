@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/oswaldregular.woff') format('woff');
+  src: url('../fonts/oswaldregular.woff2') format('woff2');
+}
+
+@mixin font-oswald ($color: #111111) {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  color: $color;
+}
+
+@mixin font-arial {
+  font-family: 'Arial', sans-serif;
+  color: #444444;
+}
+
+@mixin font-size-height ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  @include font-arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import 'header.scss';
+
+@import 'main.scss';
+
+@import 'categories.scss';
+@import 'advantages.scss';
+@import 'result.scss';
+@import 'slider.scss';
+@import 'contacts.scss';
+
+@import 'catalog.scss';
+@import 'extra.scss';
+
+@import 'form.scss';
+
+@import 'footer.scss';
