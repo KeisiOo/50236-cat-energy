@@ -6,7 +6,7 @@
 
 .extra__product-name {
   @include font-size-height (16px, 16px);
-  @include font-oswald (#222222);
+  @include font-oswald ($black-brown);
   font-weight: normal;
   text-transform: uppercase;
 }
@@ -17,6 +17,6 @@
 
 .extra__event {
   @include font-size-height (16px, 16px);
-  color: #ffffff;
+  color: $white;
   background: url('../img/gift-photo-mobile@1x.jpg') no-repeat;
 }

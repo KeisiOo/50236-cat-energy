@@ -1,6 +1,4 @@
-.page-main__title,
-.advantages__title,
-.result__title {
+.page-main__title {
   @include font-size-height (36px, 60px);
   @include font-oswald;
   font-weight: normal;

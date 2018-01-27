@@ -1,18 +1,6 @@
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.main-nav__link {
-  @include font-size-height (20px, 20px);
-  @include font-oswald;
-  text-transform: uppercase;
-}
-
 .page-header__bottom {
   @include font-oswald;
-  color: #ffffff;
+  color: $white;
   background: url('../img/index-background-mobile@1x.jpg') no-repeat;
 }
 
@@ -30,6 +18,6 @@
 .page-header__set-programm {
   @include font-size-height (14px, 18px);
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   background: #68b738;
 }

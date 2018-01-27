@@ -1,0 +1,11 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__link {
+  @include font-size-height (20px, 20px);
+  @include font-oswald;
+  text-transform: uppercase;
+}

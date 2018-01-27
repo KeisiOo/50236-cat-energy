@@ -1,6 +1,6 @@
 .form {
   @include font-size-height (16px, 18px);
-  @include font-oswald (#222222);
+  @include font-oswald ($black-brown);
   text-transform: uppercase;
 }
 
@@ -11,7 +11,7 @@
 
 .form__input-text {
   @include font-size-height (16px, 18px);
-  @include font-oswald (#444444);
+  @include font-oswald ($dark-bluish-black);
 }
 
 .form__title {
@@ -23,12 +23,12 @@
 
 .form__textarea {
   @include font-size-height (16px, 18px);
-  @include font-oswald (#444444);
+  @include font-oswald ($dark-bluish-black);
 }
 
 .form__submit {
   @include font-size-height (16px, 20px);
-  @include font-oswald (#ffffff);
+  @include font-oswald ($white);
   text-transform: uppercase;
   background: #68b738;
   border: none;

@@ -1,24 +1,22 @@
-@font-face {
-  font-family: 'Oswald';
-  src: url('../fonts/oswaldregular.woff') format('woff');
-  src: url('../fonts/oswaldregular.woff2') format('woff2');
-}
+$nearly-black: #111111;
+$black-brown: #222222;
+$dark-bluish-black: #444444;
+$white: #ffffff;
 
-@mixin font-oswald ($color: #111111) {
+@mixin font-oswald ($color: $nearly-black) {
   font-family: 'Oswald', 'Arial', sans-serif;
   color: $color;
 }
 
 @mixin font-arial {
   font-family: 'Arial', sans-serif;
-  color: #444444;
+  color: $dark-bluish-black;
 }
 
 @mixin font-size-height ($size, $height) {
   font-size: $size;
   line-height: $height;
 }
-
 
 body {
   margin: 0;
@@ -30,7 +28,10 @@ a {
   text-decoration: none;
 }
 
+@import 'fonts.scss';
+
 @import 'header.scss';
+@import 'navigation.scss';
 
 @import 'main.scss';
 
@@ -41,6 +42,7 @@ a {
 @import 'contacts.scss';
 
 @import 'catalog.scss';
+@import 'product.scss';
 @import 'extra.scss';
 
 @import 'form.scss';
