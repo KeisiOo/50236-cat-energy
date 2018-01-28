@@ -1,0 +1,50 @@
+$nearly-black: #111111;
+$black-brown: #222222;
+$dark-bluish-black: #444444;
+$white: #ffffff;
+
+@mixin font-oswald ($color: $nearly-black) {
+  font-family: 'Oswald', 'Arial', sans-serif;
+  color: $color;
+}
+
+@mixin font-arial {
+  font-family: 'Arial', sans-serif;
+  color: $dark-bluish-black;
+}
+
+@mixin font-size-height ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  @include font-arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+@import 'fonts.scss';
+
+@import 'header.scss';
+@import 'navigation.scss';
+
+@import 'main.scss';
+
+@import 'categories.scss';
+@import 'advantages.scss';
+@import 'result.scss';
+@import 'slider.scss';
+@import 'contacts.scss';
+
+@import 'catalog.scss';
+@import 'product.scss';
+@import 'extra.scss';
+
+@import 'form.scss';
+
+@import 'footer.scss';

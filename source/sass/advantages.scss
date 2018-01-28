@@ -1,0 +1,9 @@
+.advantages__title {
+  @include font-size-height (36px, 60px);
+  @include font-oswald;
+  font-weight: normal;
+}
+
+.advantages__desc {
+  @include font-size-height (14px, 18px);
+}

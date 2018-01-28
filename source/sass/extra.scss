@@ -1,0 +1,22 @@
+.extra__title {
+  @include font-size-height (24px, 24px);
+  @include font-oswald;
+  font-weight: normal;
+}
+
+.extra__product-name {
+  @include font-size-height (16px, 16px);
+  @include font-oswald ($black-brown);
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.extra__product-info {
+  @include font-size-height (14px, 14px);
+}
+
+.extra__event {
+  @include font-size-height (16px, 16px);
+  color: $white;
+  background: url('../img/gift-photo-mobile@1x.jpg') no-repeat;
+}

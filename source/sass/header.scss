@@ -1,0 +1,23 @@
+.page-header__bottom {
+  @include font-oswald;
+  color: $white;
+  background: url('../img/index-background-mobile@1x.jpg') no-repeat;
+}
+
+.page-header__title {
+  @include font-size-height (36px, 36px);
+  font-weight: normal;
+}
+
+.page-header__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.page-header__set-programm {
+  @include font-size-height (14px, 18px);
+  text-transform: uppercase;
+  color: $white;
+  background: #68b738;
+}
