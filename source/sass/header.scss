@@ -4,8 +4,8 @@
 }
 
 .page-header__bottom {
-  min-height: 500px;
   @include font-oswald;
+  min-height: 500px;
   color: $white;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
 }
