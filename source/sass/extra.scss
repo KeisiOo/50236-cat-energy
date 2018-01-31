@@ -1,3 +1,20 @@
+.extra {
+  min-height: 970px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra {
+    min-height: 1030px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    display: flex;
+    min-height: 510px;
+  }
+}
+
 .extra__title {
   @include font-size-height (24px, 24px);
   @include font-oswald;

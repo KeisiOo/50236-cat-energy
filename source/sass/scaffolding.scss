@@ -1,0 +1,32 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  @include font-arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1260px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+}

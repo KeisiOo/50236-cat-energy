@@ -1,3 +1,20 @@
+.result {
+  min-height: 700px;
+}
+
+@media (min-width: $tablet-width) {
+  .result {
+    min-height: 1080px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .result {
+    display: flex;
+    min-height: 660px;
+  }
+}
+
 .result__title {
   @include font-size-height (36px, 60px);
   @include font-oswald;

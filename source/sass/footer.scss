@@ -1,3 +1,14 @@
+.page-footer {
+  min-height: 236px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    min-height: 150px;
+  }
+}
+
 .copyright__text {
   @include font-size-height (16px, 16px);
 }
