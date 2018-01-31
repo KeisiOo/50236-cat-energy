@@ -1,10 +1,10 @@
 @mixin font-oswald ($color: $nearly-black) {
-  font-family: 'Oswald', 'Arial', sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: $color;
 }
 
 @mixin font-arial {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   color: $dark-bluish-black;
 }
 

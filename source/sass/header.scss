@@ -3,28 +3,16 @@
   min-height: 265px;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__top {
-    min-height: 120px;
-  }
-}
-
 .page-header__bottom {
   min-height: 500px;
   @include font-oswald;
   color: $white;
-  background: url('../img/index-background-mobile@1x.jpg') no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__bottom {
-    min-height: 830px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__bottom {
-    min-height: 630px;
+  .page-header__top {
+    min-height: 120px;
   }
 }
 

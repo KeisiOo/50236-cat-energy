@@ -1,17 +1,6 @@
-.extra {
-  min-height: 970px;
-}
-
-@media (min-width: $tablet-width) {
-  .extra {
-    min-height: 1030px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .extra {
     display: flex;
-    min-height: 510px;
   }
 }
 
@@ -35,5 +24,5 @@
 .extra__event {
   @include font-size-height (16px, 16px);
   color: $white;
-  background: url('../img/gift-photo-mobile@1x.jpg') no-repeat;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
 }

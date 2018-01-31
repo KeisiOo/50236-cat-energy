@@ -1,20 +1,7 @@
 .form {
-  min-height: 1270px;
   @include font-size-height (16px, 18px);
   @include font-oswald ($black-brown);
   text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .form {
-    min-height: 1710px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form {
-    min-height: 1320px;
-  }
 }
 
 .form__desc {

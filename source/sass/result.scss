@@ -2,12 +2,6 @@
   min-height: 700px;
 }
 
-@media (min-width: $tablet-width) {
-  .result {
-    min-height: 1080px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .result {
     display: flex;

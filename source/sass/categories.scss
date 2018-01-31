@@ -2,23 +2,6 @@
   @include font-oswald;
 }
 
-.categories__list {
-  min-height: 570px;
-}
-
-@media (min-width: $tablet-width) {
-  .categories__list {
-    min-height: 780px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .categories__list {
-    min-height: 450px;
-    display: flex;
-  }
-}
-
 .categories__item {
   min-height: 265px;
   background: #f2f2f2;
@@ -28,6 +11,12 @@
 @media (min-width: $tablet-width) {
   .categories__item {
     min-height: 370px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .categories__list {
+    display: flex;
   }
 }
 
