@@ -1,0 +1,14 @@
+@mixin font-oswald ($color: $nearly-black) {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $color;
+}
+
+@mixin font-arial {
+  font-family: "Arial", sans-serif;
+  color: $dark-bluish-black;
+}
+
+@mixin font-size-height ($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}

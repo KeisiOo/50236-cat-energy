@@ -1,3 +1,19 @@
+.contacts {
+  min-height: 480px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    min-height: 405px;
+  }
+}
+
 .contacts__title {
   @include font-size-height (16px, 20px);
   @include font-oswald;

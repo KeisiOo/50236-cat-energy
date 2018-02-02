@@ -1,7 +1,19 @@
+.page-header__top {
+  display: flex;
+  min-height: 265px;
+}
+
 .page-header__bottom {
   @include font-oswald;
+  min-height: 500px;
   color: $white;
-  background: url('../img/index-background-mobile@1x.jpg') no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__top {
+    min-height: 120px;
+  }
 }
 
 .page-header__title {
