@@ -7,11 +7,26 @@
 .form__desc {
   @include font-size-height (14px, 18px);
   @include font-oswald;
+  margin-bottom: 40px;
+  width: 228px;
+}
+
+.form__label-text {
+  display: block;
 }
 
 .form__input-text {
   @include font-size-height (16px, 18px);
   @include font-oswald ($dark-bluish-black);
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  width: 120px;
+}
+
+.form__label-radio {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .form__title {
@@ -24,13 +39,22 @@
 .form__textarea {
   @include font-size-height (16px, 18px);
   @include font-oswald ($dark-bluish-black);
+  width: 280px;
+  height: 150px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+}
+
+.form__label-checkbox {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .form__submit {
-  @include font-size-height (16px, 20px);
   @include font-oswald ($white);
-  text-transform: uppercase;
-  background: #68b738;
+  @include button;
+  @include font-size-height (16px, 20px);
   border: none;
 }
 
@@ -38,4 +62,5 @@
   @include font-size-height (14px, 16px);
   @include font-arial;
   text-transform: none;
+  text-align: center;
 }

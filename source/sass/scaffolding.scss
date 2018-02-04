@@ -15,6 +15,10 @@ a {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     max-width: 708px;

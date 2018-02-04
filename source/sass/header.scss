@@ -1,35 +1,74 @@
-.page-header__top {
+.page-header__wrap {
+  height: 65px;
   display: flex;
-  min-height: 265px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__toggle {
+  background: transparent;
+  border: none;
+  width: 25px;
 }
 
 .page-header__bottom {
   @include font-oswald;
-  min-height: 500px;
+  text-align: center;
   color: $white;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+}
+
+.page-header__title {
+  @include font-size-height (36px, 36px);
+  padding-top: 30px;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+.page-header__subtitle {
+  @include font-size-height (14px, 14px);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.page-header__set-programm {
+  @include button;
 }
 
 @media (min-width: $tablet-width) {
   .page-header__top {
     min-height: 120px;
+    display: flex;
   }
-}
 
-.page-header__title {
-  @include font-size-height (36px, 36px);
-  font-weight: normal;
-}
+  .page-header__toggle {
+    display: none;
+  }
 
-.page-header__subtitle {
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-}
+  .page-header__wrap {
+    justify-content: flex-start;
+  }
 
-.page-header__set-programm {
-  @include font-size-height (14px, 18px);
-  text-transform: uppercase;
-  color: $white;
-  background: #68b738;
+  .page-header__bottom {
+    background: url("../img/index-can-mobile@1x.png") no-repeat 50%;
+    color: $nearly-black;
+    text-align: left;
+    height: 630px;
+  }
+
+  .page-header__title {
+    @include font-size-height (60px, 60px);
+    width: 420px;
+  }
+
+  .page-header__subtitle {
+    @include font-size-height (20px, 20px);
+  }
+  .page-header__wrap-img {
+    display: none;
+  }
+
+  .page-header__set-programm {
+    @include font-size-height (20px, 20px);
+  }
 }

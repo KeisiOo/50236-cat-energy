@@ -2,16 +2,8 @@
   min-height: 480px;
 }
 
-@media (min-width: $tablet-width) {
-  .contacts {
-    min-height: 600px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .contacts {
-    min-height: 405px;
-  }
+.contacts__wrap {
+  display: flex;
 }
 
 .contacts__title {
@@ -22,4 +14,16 @@
 
 .contacts__text {
   @include font-size-height (14px, 20px);
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    min-height: 600px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    min-height: 405px;
+  }
 }

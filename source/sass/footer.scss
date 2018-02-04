@@ -1,12 +1,21 @@
-.page-footer {
-  min-height: 236px;
-}
-
 @media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
     min-height: 150px;
   }
+}
+
+.page-footer {
+  text-align: center;
+}
+
+.page-footer__logo-text {
+  display: block;
+  padding: 32px 0;
+}
+
+.page-footer__copyright {
+  display: flex;
 }
 
 .copyright__text {

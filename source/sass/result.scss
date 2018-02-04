@@ -1,12 +1,6 @@
 .result {
   min-height: 700px;
-}
-
-@media (min-width: $desktop-width) {
-  .result {
-    display: flex;
-    min-height: 660px;
-  }
+  background: #f2f2f2;
 }
 
 .result__title {
@@ -19,18 +13,42 @@
   @include font-size-height (14px, 18px);
 }
 
+.result__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
 .result__item {
   @include font-size-height (24px, 24px);
   @include font-oswald;
+  display: block;
+  width: 120px;
+  padding-top: 15px;
+  border: 1px solid black;
 }
 
 .result__item-explain {
   @include font-size-height (12px, 12px);
   @include font-arial;
+  display: block;
+  padding-top: 12px;
 }
 
 .result__costs {
   @include font-size-height (14px, 20px);
   @include font-oswald;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .result {
+    display: flex;
+    min-height: 660px;
+  }
 }

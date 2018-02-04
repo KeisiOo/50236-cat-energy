@@ -1,13 +1,15 @@
-@media (min-width: $desktop-width) {
-  .extra {
-    display: flex;
-  }
-}
-
 .extra__title {
   @include font-size-height (24px, 24px);
   @include font-oswald;
   font-weight: normal;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .extra__product-name {
@@ -23,6 +25,28 @@
 
 .extra__event {
   @include font-size-height (16px, 16px);
+  position: relative;
+  height: 290px;
   color: $white;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  text-align: center;
+}
+
+.extra__event-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  background: url("../img/icon-gift.svg") no-repeat;
+}
+
+.extra__event-text {
+  padding-top: 180px;
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    display: flex;
+  }
 }
