@@ -8,3 +8,12 @@
   @include font-oswald;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .slider {
+    background: #eaeaea;
+  }
+  .slider__wrap-img {
+    padding-top: -100px;
+  }
+}

@@ -75,21 +75,25 @@
             </div>
             <div class="form__fieldset">
               <h2 class="form__title">Дополнительно</h2>
-              <label for="extra-sugar" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-sugar" class="form__input-checkbox" checked>Сахарозаменитель
-              </label>
-              <label for="extra-water" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-water" class="form__input-checkbox">Питьевая вода
-              </label>
-              <label for="extra-milk" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-milk" class="form__input-checkbox">Молоко
-              </label>
-              <label for="extra-vitamin" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-vitamin" class="form__input-checkbox">Витамины
-              </label>
+              <div class="form__checkbox">
+                <label for="extra-sugar" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-sugar" class="form__input-checkbox" checked>Сахарозаменитель
+                </label>
+                <label for="extra-water" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-water" class="form__input-checkbox">Питьевая вода
+                </label>
+                <label for="extra-milk" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-milk" class="form__input-checkbox">Молоко
+                </label>
+                <label for="extra-vitamin" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-vitamin" class="form__input-checkbox">Витамины
+                </label>
+              </div>
             </div>
-            <input type="submit" name="submit" class="form__submit button" value="Отправить заявку">
-            <p class="form__legend"><sup>*</sup> - Обязательные поля</p>
+            <div class="form__fieldset form__fieldset-submit">
+              <input type="submit" name="submit" class="form__submit button" value="Отправить заявку">
+              <p class="form__legend"><sup>*</sup> - Обязательные поля</p>
+            </div>
           </form>
         </section>
         <section class="contacts">

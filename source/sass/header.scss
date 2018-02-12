@@ -41,6 +41,10 @@
     display: flex;
   }
 
+  .page-header__logo-img {
+    margin-right: 18px;
+  }
+
   .page-header__toggle {
     display: none;
   }
@@ -54,6 +58,7 @@
     color: $nearly-black;
     text-align: left;
     height: 630px;
+    padding-left: 90px;
   }
 
   .page-header__title {
@@ -63,12 +68,22 @@
 
   .page-header__subtitle {
     @include font-size-height (20px, 20px);
+    margin-bottom: 45px;
   }
+
   .page-header__wrap-img {
     display: none;
   }
 
   .page-header__set-programm {
     @include font-size-height (20px, 20px);
+    width: 245px;
+    padding: 18px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__subtitle {
+    margin-bottom: 55px;
   }
 }

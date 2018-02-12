@@ -3,3 +3,9 @@
   @include font-oswald;
   font-weight: normal;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    @include font-size-height (60px, 60px);
+  }
+}
