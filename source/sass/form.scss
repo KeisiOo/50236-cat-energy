@@ -7,11 +7,28 @@
 .form__desc {
   @include font-size-height (14px, 18px);
   @include font-oswald;
+  margin-bottom: 40px;
+  width: 228px;
+}
+
+.form__label-text {
+  display: flex;
+  align-items: baseline;
 }
 
 .form__input-text {
   @include font-size-height (16px, 18px);
   @include font-oswald ($dark-bluish-black);
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.form__label-radio {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .form__title {
@@ -24,13 +41,22 @@
 .form__textarea {
   @include font-size-height (16px, 18px);
   @include font-oswald ($dark-bluish-black);
+  width: 100%;
+  height: 150px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.form__label-checkbox {
+  display: block;
+  margin-bottom: 30px;
 }
 
 .form__submit {
-  @include font-size-height (16px, 20px);
   @include font-oswald ($white);
-  text-transform: uppercase;
-  background: #68b738;
+  @include button;
+  @include font-size-height (16px, 20px);
   border: none;
 }
 
@@ -38,4 +64,50 @@
   @include font-size-height (14px, 16px);
   @include font-arial;
   text-transform: none;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    @include font-size-height (20px, 20px);
+    padding: 0 40px;
+  }
+
+  .form__desc {
+    @include font-size-height (20px, 30px);
+    min-width: 325px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 70px;
+  }
+
+  .form__input-text {
+    @include font-size-height (20px, 20px);
+  }
+
+  .form__title {
+    @include font-size-height (36px, 36px);
+  }
+
+  .form__textarea {
+    @include font-size-height (20px, 30px);
+  }
+
+  .form__checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__label-checkbox {
+    width: 50%;
+  }
+
+  .form__fieldset-submit {
+    display: flex;
+  }
+
+  .form__legend {
+    margin-left: 60px;
+  }
 }

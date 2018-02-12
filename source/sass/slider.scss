@@ -1,5 +1,19 @@
+.slider {
+  text-align: center;
+  padding-bottom: 36px;
+}
+
 .slider__option {
   @include font-size-height (16px, 20px);
   @include font-oswald;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    background: #eaeaea;
+  }
+  .slider__wrap-img {
+    padding-top: -100px;
+  }
 }

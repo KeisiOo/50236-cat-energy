@@ -9,15 +9,17 @@
     <div class="container">
       <header class="page-header">
         <div class="page-header__top">
-          <a href="#" class="page-header__logo-img">
-            <img src="img/icon-logo-mobile.svg" width="40" height="40" alt="животное">
-          </a>
-          <a href="#" class="page-header__logo-text">
-            <img src="img/logo-mobile-header.svg" width="100" height="20" alt="кэт енерджи">
-          </a>
+          <div class="page-header__wrap">
+            <a href="#" class="page-header__logo-img">
+              <img src="img/icon-logo-mobile.svg" width="40" height="40" alt="животное">
+            </a>
+            <a href="#" class="page-header__logo-text">
+              <img src="img/logo-mobile-header.svg" width="100" height="20" alt="кэт енерджи">
+            </a>
+            <button class="page-header__toggle" type="button">X</button>
+          </div>
           <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">Открыть меню</button>
-            <ul class="main-nav__list hidden">
+            <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="index.html" class="main-nav__link">Главная</a>
               </li>
@@ -73,26 +75,32 @@
             </div>
             <div class="form__fieldset">
               <h2 class="form__title">Дополнительно</h2>
-              <label for="extra-sugar" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-sugar" class="form__input-checkbox" checked>Сахарозаменитель
-              </label>
-              <label for="extra-water" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-water" class="form__input-checkbox">Питьевая вода
-              </label>
-              <label for="extra-milk" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-milk" class="form__input-checkbox">Молоко
-              </label>
-              <label for="extra-vitamin" class="form__label-checkbox">
-                <input type="checkbox" name="extra" id="extra-vitamin" class="form__input-checkbox">Витамины
-              </label>
+              <div class="form__checkbox">
+                <label for="extra-sugar" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-sugar" class="form__input-checkbox" checked>Сахарозаменитель
+                </label>
+                <label for="extra-water" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-water" class="form__input-checkbox">Питьевая вода
+                </label>
+                <label for="extra-milk" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-milk" class="form__input-checkbox">Молоко
+                </label>
+                <label for="extra-vitamin" class="form__label-checkbox">
+                  <input type="checkbox" name="extra" id="extra-vitamin" class="form__input-checkbox">Витамины
+                </label>
+              </div>
             </div>
-            <input type="submit" name="submit" class="form__submit button" value="Отправить заявку">
-            <span class="form__legend"><sup>*</sup> - Обязательные поля</span>
+            <div class="form__fieldset form__fieldset-submit">
+              <input type="submit" name="submit" class="form__submit button" value="Отправить заявку">
+              <p class="form__legend"><sup>*</sup> - Обязательные поля</p>
+            </div>
           </form>
         </section>
         <section class="contacts">
-          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <div class="contacts__wrap">
+            <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
           <div class="contacts__map"></div>
         </section>
       </main>

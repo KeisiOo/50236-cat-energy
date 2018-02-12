@@ -4,8 +4,32 @@
   list-style: none;
 }
 
+.main-nav__item {
+  padding: 25px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
 .main-nav__link {
   @include font-size-height (20px, 20px);
   @include font-oswald;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin-left: auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .main-nav__item {
+    padding: 20px;
+  }
+
+  .main-nav__item:last-child {
+    padding-right: 0;
+  }
 }

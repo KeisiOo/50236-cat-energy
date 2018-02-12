@@ -1,16 +1,35 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 24px;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .catalog__item {
-    width: 324px;
+    width: 254px;
+    display: block;
+    background: #f2f2f2;
+    padding: 35px;
+    margin-bottom: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    width: 245px;
+    width: 175px;
+    padding: 40px;
   }
 }

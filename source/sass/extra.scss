@@ -1,13 +1,15 @@
-@media (min-width: $desktop-width) {
-  .extra {
-    display: flex;
-  }
-}
-
 .extra__title {
   @include font-size-height (24px, 24px);
   @include font-oswald;
   font-weight: normal;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .extra__product-name {
@@ -23,6 +25,71 @@
 
 .extra__event {
   @include font-size-height (16px, 16px);
+  position: relative;
+  height: 290px;
   color: $white;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  text-align: center;
+}
+
+.extra__event-icon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 40%;
+  top: 25%;
+  background: url("../img/icon-gift.svg") no-repeat;
+}
+
+.extra__event-text {
+  padding-top: 180px;
+}
+
+@media (min-width: $tablet-width) {
+  .extra__title {
+    @include font-size-height (36px, 36px);
+  }
+
+  .extra__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    border: 1px solid #d9d9d9;
+    padding: 0 36px;
+  }
+
+  .extra__product-info {
+    margin-left: auto;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .extra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .extra__title {
+    width: 100%;
+  }
+
+  .extra__list {
+    width: 875px;
+  }
+
+  .extra__item {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+
+  .extra__event {
+    width: 245px;
+  }
+
+  .product__order--extra {
+    width: 245px;
+  }
 }
