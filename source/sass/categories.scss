@@ -93,6 +93,7 @@
   }
 
   .categories__cat-img {
+    position: absolute;
 
     &--slim {
       width: 140px;
@@ -119,10 +120,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .categories {
-
-  }
-
   .categories__list {
     display: flex;
     justify-content: space-between;
@@ -144,6 +141,7 @@
   }
 
   .categories__cat-img {
+    position: absolute;
 
     &--slim {
       width: 71px;

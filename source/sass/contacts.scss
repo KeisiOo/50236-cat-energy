@@ -49,8 +49,8 @@
   }
 
   .contacts__text {
-    text-align: right;
     @include font-size-height (16px, 20px);
+    text-align: right;
   }
 }
 
