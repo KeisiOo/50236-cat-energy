@@ -1,26 +1,55 @@
+.extra {
+  margin-bottom: 32px;
+}
+
 .extra__title {
   @include font-size-height (24px, 24px);
   @include font-oswald;
   font-weight: normal;
   margin: 0;
-  padding: 30px 0;
+  margin-bottom: 34px;
 }
 
 .extra__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 38px;
+}
+
+.extra__item {
+  padding-top: 14px;
+  margin-bottom: 16px;
+  border-top: 1px solid $gray;
+}
+
+.extra__item:last-child {
+  padding-bottom: 16px;
+  border-bottom: 1px solid $gray;
 }
 
 .extra__product-name {
   @include font-size-height (16px, 16px);
   @include font-oswald ($black-brown);
+  margin: 0;
+  margin-bottom: 12px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
 .extra__product-info {
   @include font-size-height (14px, 14px);
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.extra__product-field,
+.extra__product-value {
+  padding: 0;
+}
+
+.extra__product-value {
+  text-align: right;
 }
 
 .extra__event {
@@ -30,19 +59,25 @@
   color: $white;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
   text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 560px auto;
+  }
 }
 
 .extra__event-icon {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   position: absolute;
   left: 40%;
-  top: 25%;
+  top: 23%;
   background: url("../img/icon-gift.svg") no-repeat;
 }
 
 .extra__event-text {
-  padding-top: 180px;
+  @include font-size-height (16px, 19px);
+  padding-top: 188px;
 }
 
 @media (min-width: $tablet-width) {
@@ -63,6 +98,14 @@
     margin-left: auto;
   }
 
+  .extra__event {
+    background: url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 1416px auto;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -87,6 +130,12 @@
 
   .extra__event {
     width: 245px;
+    background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 490px auto;
+    }
   }
 
   .product__order--extra {

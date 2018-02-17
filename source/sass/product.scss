@@ -1,9 +1,11 @@
 .product__wrap-img {
   text-align: center;
+  height: 144px
 }
 
 .product__content {
   width: 140px;
+  padding-top: 22px;
 }
 
 .product__name {
@@ -12,12 +14,28 @@
   text-transform: uppercase;
   font-weight: normal;
   width: 75px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.product__name--more {
+  width: auto;
 }
 
 .product__info,
 .product__text {
-  @include font-size-height (12px, 16px);
+  @include font-size-height (12px, 15px);
   width: 100%;
+}
+
+.product__text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.product__field,
+.product__value {
+  padding: 0;
 }
 
 .product__value {
@@ -26,9 +44,9 @@
 
 .product__order,
 .product__show-more {
-  @include font-size-height (16px, 20px);
   @include font-oswald (#ffffff);
   @include button;
+  @include font-size-height (16px, 20px);
   text-transform: uppercase;
   background: #68b738;
 }
@@ -36,6 +54,14 @@
 .product__show-more {
   color: $black-brown;
   background-color: #f2f2f2;
+}
+
+.product__plus-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+  background: url("../img/icon-plus-mobile.svg") no-repeat;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,6 +1,10 @@
 .slider {
   text-align: center;
-  padding-bottom: 36px;
+  padding-bottom: 32px;
+}
+
+.slider__wrap-img {
+  margin-bottom: 26px;
 }
 
 .slider__option {
@@ -11,9 +15,30 @@
 
 @media (min-width: $tablet-width) {
   .slider {
-    background: #eaeaea;
+    position: relative;
+    height: 430px;
+    background: $medium-gray;
   }
+
   .slider__wrap-img {
-    padding-top: -100px;
+    position: absolute;
+    top: -167px;
+    left: 18px;
+  }
+
+  .slider__img {
+    width: 690px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 610px;
+    background: $light-gray;
+  }
+
+  .slider__wrap-img {
+    top: -190px;
+    left: -40px;
   }
 }

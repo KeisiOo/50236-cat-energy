@@ -1,3 +1,7 @@
+.catalog {
+  margin-bottom: 28px;
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -9,6 +13,12 @@
   flex-wrap: wrap;
   border-bottom: 1px solid #ededed;
   padding-bottom: 24px;
+}
+
+.catalog__item--more {
+  display: block;
+  padding-top: 26px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
