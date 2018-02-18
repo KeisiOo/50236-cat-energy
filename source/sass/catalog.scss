@@ -49,13 +49,24 @@
   .catalog__item--more {
     padding-top: 57px;
     background: $white;
-    border-bottom: 1px solid #ededed;
+    border: 1px solid #ededed;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__item {
-    width: 175px;
+    width: 165px;
     padding: 40px;
+    margin-bottom: 137px;
+  }
+
+  .catalog__item:nth-child(7),
+  .catalog__item:last-child {
+    margin-bottom: auto;
+  }
+
+  .catalog__item--more {
+    padding-top: 55px;
+    border: 1px solid #ededed;
   }
 }

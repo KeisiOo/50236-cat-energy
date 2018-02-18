@@ -78,6 +78,7 @@
 
   .categories__title {
     @include font-size-height (36px, 37px);
+    margin-bottom: 25px;
   }
 
   .categories__desc {
@@ -85,11 +86,16 @@
     width: 375px;
     margin-bottom: 36px;
     border: none;
+
+    &--pro {
+      width: 340px;
+    }
   }
 
   .categories__to-catalog {
     @include font-size-height (20px, 20px);
-    width: 370px;
+    display: block;
+    margin-bottom: 40px;
   }
 
   .categories__cat-img {

@@ -153,23 +153,31 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: -132px;
+    margin-bottom: 20px;
   }
 
   .extra__title {
     width: 100%;
+    margin-left: 0;
   }
 
   .extra__list {
-    width: 875px;
+    width: 895px;
   }
 
   .extra__item {
     flex-wrap: nowrap;
     padding: 0;
+    padding-top: 17px;
+    align-items: baseline;
+    border-left: none;
+    border-right: none;
   }
 
   .extra__event {
     width: 245px;
+    height: 285px;
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -178,7 +186,14 @@
     }
   }
 
+  .extra__event-text {
+    padding-top: 170px;
+    padding-left: 0;
+    text-align: center;
+  }
+
   .product__order--extra {
     width: 245px;
+    margin-bottom: 0;
   }
 }
