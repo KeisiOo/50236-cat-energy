@@ -39,12 +39,12 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function () {
-  return gulp.src("source"/*.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
     .pipe(gulp.dest("build"));
-  });
+});
 
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
