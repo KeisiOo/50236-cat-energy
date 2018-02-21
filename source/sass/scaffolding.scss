@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   @include font-arial;
   min-width: 320px;
@@ -10,8 +14,7 @@ a {
 }
 
 .container {
-  max-width: 280px;
-  padding: 0 20px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -25,11 +28,17 @@ a {
     padding: 0 30px;
     margin: 0 auto;
   }
+
+  .container-min {
+    max-width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    max-width: 1260px;
+    max-width: 1220px;
     padding: 0 40px;
     margin: 0 auto;
   }
